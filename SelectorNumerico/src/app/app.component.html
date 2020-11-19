@@ -1,7 +1,23 @@
 <div>
+  <h2>Llamar a metodos de la componente hija desde el template del padre</h2>
   <app-selector-numerico minimo="1" maximo="10" #selector1></app-selector-numerico>
   <br>
   <button (click)="selector1.fijar(1)">Fijar en 1</button><br>
   <button (click)="selector1.fijar(5)">Fijar en 5</button><br>
   <button (click)="selector1.fijar(10)">Fijar en 10</button>
+</div>
+<hr><hr>
+<div>
+  <h2>Llamar a metodos de la componente hija desde la clase padre</h2>
+  <app-selector-numerico minimo="1" maximo="10" #selector2></app-selector-numerico>
+  <br>  
+  <button (click)="fijarSelector2(1)">Fijar en 1</button><br>
+  <button (click)="fijarSelector2(5)">Fijar en 5</button><br>
+  <button (click)="fijarSelector2(10)">Fijar en 10</button>
+  <hr>
+  <app-selector-numerico   minimo="1" maximo="10" #selector3></app-selector-numerico>    
+  <br>
+  <button (click)="fijarSelector3(1)">Fijar en 1</button><br>
+  <button (click)="fijarSelector3(5)">Fijar en 5</button><br>
+  <button (click)="fijarSelector3(10)">Fijar en 10</button>  
 </div>
